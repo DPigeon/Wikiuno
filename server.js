@@ -53,7 +53,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/build/index.html"));
 });
 
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
-server.listen(port);
-console.log(`Backend running on port ${port}.`);
+server.listen(PORT);
+console.log(`Backend running on port ${PORT}.`);
