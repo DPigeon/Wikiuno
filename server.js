@@ -44,7 +44,7 @@ server.get("/api/hackathon", function(request, response) {
   });
 });
 
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 server.listen(port);
 console.log(`Backend running on port ${port}.`);
