@@ -8,8 +8,8 @@ const DatasAPI = require("./models/data");
 // Start an instance of the backend server
 const server = express();
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, "client/build")));
+// Serve static files from the React server
+server.use(express.static(path.join(__dirname, "client/build")));
 
 // Allowing requests from the browser
 server.use(bodyParser.json()); // for parsing serverlication/json
@@ -49,7 +49,7 @@ server.get("/api/hackathon", function(request, response) {
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
-app.get("*", (req, res) => {
+server.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/client/build/index.html"));
 });
 
