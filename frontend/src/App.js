@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   fetchAllData() {
-    fetch(`http://localhost:4000/api/hackathon`, {
+    fetch(`/api/hackathon`, {
       method: "GET",
       headers: {
         Accept: "application/json",
