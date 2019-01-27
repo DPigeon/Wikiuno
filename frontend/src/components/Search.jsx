@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SearchButton from "../search.png";
-import SearchRequest from "../requestSearch.png";
+import SearchButton from "../images/search.png";
+import SearchRequest from "../images/requestSearch.png";
 
 class Search extends Component {
   state = {

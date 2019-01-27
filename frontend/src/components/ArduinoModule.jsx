@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RequestImage from "../request.png";
+import RequestImage from "../images//request.png";
 import "./styles/styles.css";
 
 class ArduinoModule extends Component {
